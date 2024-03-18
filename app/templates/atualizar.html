@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'atualizar.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Atualizar</h1>
+    </header>
+    <form action="{% url 'atualizar' pessoa.id %}" method="post" class="forms">
+        {% csrf_token %}
+        <h2>Nome</h2>
+        <input type="text" value="{{pessoa.nome}}" name="nome">
+        <h2>Idade</h2>
+        <input type="text" value="{{pessoa.idade}}" name="idade">
+        <h2>Email</h2>
+        <input type="text" value="{{pessoa.email}}" name="email">
+        <h2>Telefone</h2>
+        <input type="text" value="{{pessoa.telefone}}" name="telefone">
+        <button type="submit">Atualizar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'ver.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastrados</h1>
+   </header>
+    <table border="1">
+        <tr cabecalho>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Atualizar</th>
+        </tr>
+        {% for pessoa in pessoas %}
+            <tr class="lista">
+                <th class="valores">{{pessoa.id}}</th>
+                <th>{{pessoa.nome}}</th>
+                <th>{{pessoa.idade}}</th>
+                <th>{{pessoa.email}}</th>
+                <th>{{pessoa.telefone}}</th>
+                <th>
+                    <button><a href="{% url 'atualizar' pessoa.id %}">Editar</a></button>
+                </th>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
