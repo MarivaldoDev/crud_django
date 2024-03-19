@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: cornsilk;
+}
+
+header{
+    padding: 2px;
+    background-color: brown;
+    color: white;
+    font-style:oblique
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 350px;
+    margin-right: 20px;
+}
+
+input{
+    height: 20px;
+    border-color: brown;
+    background-color:bisque;
+    color: black;
+    
+}
+
+h2, input{
+    margin-top: 120px;
+    display: inline-block;
+}
+
+::placeholder{
+    color: black;
+}
+
+button{
+    margin-top: 25px;
+    margin-left: 440px;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    background-color: brown;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover{
+    background-color: darksalmon;;
+}
