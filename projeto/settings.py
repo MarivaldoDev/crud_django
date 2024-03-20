@@ -124,8 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+<<<<<<< HEAD
 STATIC_URL = 'static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+=======
+STATIC_URL = '/static/'
+>>>>>>> 280455692505de2613b62cef2a894883f45a1b86
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static')]
 
 # Default primary key field type
