@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 # import mysql.connector
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -77,16 +78,26 @@ WSGI_APPLICATION = 'projeto.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'app_django',
+#         'USER': 'root',
+#         'PASSWORD': '21790',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'app_django',
-        'USER': 'root',
-        'PASSWORD': '21790',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
+    
+    'deafult': dj_database_url.parse('postgres://cadastros_gfdm_user:AuDKx03IiJ9K45WKpeoE5gAsOTxAUxSa@dpg-cntooj0l5elc73cidtcg-a.oregon-postgres.render.com/cadastros_gfdm')
+
 }
+
+
+
+
 
 
 # Password validation
