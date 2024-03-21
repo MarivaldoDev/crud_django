@@ -29,6 +29,7 @@ SECRET_KEY = 'django-insecure-((ce7dgzk01cewz(9*7d*=$$z+xm94$w9a_9x1pi*h+t9ic46k
 DEBUG = True
 
 ALLOWED_HOSTS = ['crud-django-ovsz.onrender.com']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -91,7 +92,7 @@ WSGI_APPLICATION = 'projeto.wsgi.application'
 
 DATABASES = {
     
-    'deafult': dj_database_url.parse('postgres://cadastros_gfdm_user:AuDKx03IiJ9K45WKpeoE5gAsOTxAUxSa@dpg-cntooj0l5elc73cidtcg-a.oregon-postgres.render.com/cadastros_gfdm')
+    'default': dj_database_url.parse('postgres://cadastros_gfdm_user:AuDKx03IiJ9K45WKpeoE5gAsOTxAUxSa@dpg-cntooj0l5elc73cidtcg-a.oregon-postgres.render.com/cadastros_gfdm')
 
 }
 
