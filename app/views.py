@@ -3,13 +3,13 @@ from django.http import HttpResponse
 from .models import Pessoa
 
 # Create your views here.
-def lembrei(request): 
+def lembrei(request):
     return render(request, 'primeiro.html')
 
 
 def ver(request):
     pessoas = {
-        'pessoas': Pessoa.objects.all()
+        'pessoas': Pessoa.objects.all().order_by('id')
     }
     return render(request, 'ver.html', pessoas)
 
