@@ -1,8 +1,8 @@
 # CRUD django
 
-C -> CREATE
-R -> READ
-U -> UPDATE
-D -> DELETE
+C -> CREATE <br>
+R -> READ <br>
+U -> UPDATE <br>
+D -> DELETE <br>
 
 # Acompanhe
